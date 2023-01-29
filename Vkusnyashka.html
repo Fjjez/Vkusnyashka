@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--шрифт для логтипа-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--основной шрифт-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>vkusnyashka</title>
+</head>
+<body>
+    <header class="header">     <!--шапка сайта-->
+        <p class="header_logo">Вкусняшка</p>
+        <p class="header_text">сайт с рецептами</p>
+    </header>
+    <div class="container">     <!--контент с блоками-->
+        <div class="block">
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/l/----9/image---2019-07-01T102727.083.jpg?preset=medium" alt="">
+            <a class="block-title" href="Main-vkus.html">Основное</a>
+        </div>
+        <div class="block">
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/p/---7/---.jpg?preset=medium" alt="">
+            <a class="block-title" href="Dessert-vkus.html">Десерты</a>
+        </div>
+        <div class="block">
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/9/--2/--.jpg?preset=medium" alt="">
+            <a class="block-title" href="Drinks-vkus.html">Напитки</a>
+        </div>
+    </div>
+    <footer class="footer">     <!--подвал сайта-->
+        <div class="footer_left">      <!--левая часть-->
+            <a class="footer_logo" href="Vkusnyashka.html">Вкусняшка</a>
+            <p class="footer_text">Готовьте с удовольствием!</p>
+            <a class="about" href="About.html">Примечание для сайта</a>
+        </div>
+            <div class="footer_right">       <!--правая часть-->
+            <p class="contact">Связь с нами:</p>
+            <p class="email">***********@gmail.com</p>
+            <p class="number">+7(000)000-00-00</p>
+        </div>
+    </footer>
+    <style type="text/css">
+        *{
+margin: 0;
+padding: 0;
+}
+body{   /*цвет фона*/
+background: #30251c;
+font-family: 'Nunito', sans-serif;
+}
+.header{    /*шапка сайта*/
+background: url("https://phonoteka.org/uploads/posts/2022-02/1644411562_17-phonoteka-org-p-fon-dlya-saita-restorana-17.jpg");
+height: 550px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.header_logo{     /*заголовок*/
+font-family: 'Pacifico', cursive;
+color: #edad0a;
+font-size: 60px;
+}
+.header_text{     /*второй звголовок*/
+color: #327413;
+font-size: 32px;
+}
+.container{     /*контент*/
+padding: 100px 100px;
+display: flex;
+justify-content: space-around;
+
+}
+.block-img{     /*изображения в блоках*/
+width: 368px;
+height: 500px;
+border-radius: 15px 15px 0px 0px;
+}
+.block{     /*блоки*/
+box-sizing: border-box;
+width: 374px;
+height: 725px;
+border: 3px solid #EDAD0A;
+border-radius: 20px;
+margin-left: 100px;
+margin-right: 100px;
+}
+.block-title{       /*ссылки блоков*/
+color: #EDAD0A;
+text-decoration: none;
+font-size: 32px;
+margin-top: 90px;
+display: flex;
+justify-content: center;
+}
+.footer{        /*подвал сайта*/
+background: #d48610;
+height: auto;
+flex: 0 0 auto;
+padding: 50px;
+}
+.footer_left{       /*левая часть*/
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+.footer_logo{       /*логотип-ссылка*/
+font-family: 'Pacifico', cursive;
+color: #327413;
+text-decoration: none;
+font-size: 40px;
+}
+.footer_text{       /*текст*/
+color: #327413;
+font-size: 24px;
+}
+.footer_right{      /*правая часть*/
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+gap: 40px;
+}
+.contact{       /*связь*/
+color: #327413;
+font-size: 24px;
+margin-top: -100px;
+margin-right: 50px;
+}
+.email{     /*почта*/
+color: #327413;
+font-size: 16px;
+margin-right: 50px;
+}
+.number{        /*номер*/
+color: #327413;
+font-size: 16px;
+margin-right: 50px;
+}
+.about{
+color: #327413;
+text-decoration: none;
+font-size: 20px;
+margin-right: 50px;
+}
+    </style>
+</body>
+</html>

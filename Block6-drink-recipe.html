@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--шрифт для логтипа-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--основной шрифт-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Свекольный квас</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="Vkusnyashka.html">Вкусняшка</a>
+    </header>
+    <div class="container">       <!--контент-->
+        <div class="left_block">        <!--блок с левыми блоками-->
+            <div class="left_block_top">        <!--блок с фото и названием блюда-->
+                <p class="name">Свекольный квас</p>
+                <img class="recipe-img" src="https://lenta.servicecdn.ru/globalassets/recepty/s/-24/-.jpg?preset=medium" alt="">
+            </div>
+            <div class="left_block_bottom">      <!--блок с ингридиентами-->
+                <p class="ingridients">Ингридиенты:</p>
+                    <li class="ingridient">Свекла
+                        <ul>
+                            <li class="amount">1 кг</li>
+                        </ul>
+                    </li>
+                    <li class="ingridient">Сахарный песок
+                        <ul>
+                            <li class="amount">100 г</li>
+                        </ul>
+                    </li>
+                    <li class="ingridient">Вода без газа
+                        <ul>
+                            <li class="amount">3 л</li>
+                        </ul>
+                    </li>
+                    <li class="ingridient">Соль
+                        <ul>
+                            <li class="amount">по вкусу</li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+        <div class="right_block">     <!--блок с шагами готовки-->
+            <ul>
+                <li class="step">Шаг 1
+                    <li class="step-text">Свеклу вымойте, очистите и нарежьте кусками, уложите в банку, добавьте сахар, влейте 3 л теплой кипяченой воды.</li>
+                    <li class="step-text">Накройте крышкой и оставьте бродить при комнатной температуре.</li>
+                </li>
+                <li class="step">Шаг 2
+                <li class="step-text">Через 7 дней квас будет готов к употреблению.</li>
+                <li class="step-text">По мере расходования кваса в банку можно доливать кипяченую воду.</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">     <!--подвал сайта-->
+        <div class="footer_left">      <!--левая часть-->
+            <a class="footer_logo" href="Vkusnyashka.html">Вкусняшка</a>
+            <p class="footer_text">Готовьте с удовольствием!</p>
+            <a class="about" href="About.html">Примечание для сайта</a>
+        </div>
+            <div class="footer_right">       <!--правая часть-->
+            <p class="contact">Связь с нами:</p>
+            <p class="email">***********@gmail.com</p>
+            <p class="number">+7(000)000-00-00</p>
+        </div>
+    </footer>
+    <style type="text/css">
+        *{
+        margin: 0;
+        padding: 0;
+        }
+    body{   /*цвет фона*/
+        background: #30251c;
+        font-family: 'Nunito', sans-serif;
+    }
+    .logo{  /*логотип*/
+        font-family: 'Pacifico', cursive;
+        color: #327413;
+        font-size: 40px;
+        text-decoration: none;
+        padding: 50px;
+    }
+    .header{    /*шапка*/
+        background: #D48610;
+        height: 140px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .container{     /*контент*/
+        padding-left: 100px;
+        padding-right: 100px;
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    .left_block{
+        width: 520px;
+    }
+    .left_block_top{    /*блок с названием и фото*/
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .name{      /*название блюда*/
+        color: #327413;
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    img{        /*фото блюда*/
+        width: 520px;
+        height: 610px;
+        border-radius: 20px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .left_block_bottom{     /*блок с ингридиентами*/
+        box-sizing: border-box;
+        border: 3px solid #EDAD0A;
+        border-radius: 20px;
+        width: 520px;
+        height: auto;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .ingridients{       /*заголовок блока с ингридиентами*/
+        padding-left: 50px;
+        padding-top: 50px;
+        color: #327413;
+        font-size: 40px;
+    }
+    .ingridient{        /*ингридиент*/
+        padding-left: 50px;
+        color: #EDAD0A;
+        font-size: 20px;
+    }
+    .amount{        /*количество ингридиента*/
+        padding-left: 30px;
+        color: #EDAD0A;
+        font-size: 20px;
+        list-style-type: none;
+    }
+    .right_block{       /*блок с шагами готовки*/
+        border: 3px solid #EDAD0A;
+        border-radius: 20px;
+        width: 1100px;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 100px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        margin-bottom: auto;
+    }
+    .step{      /*шаг*/
+        color: #327413;
+        font-size: 40px;
+        padding-left: 50px;
+        padding-top: 50px;
+        list-style-type: none;
+    }
+    .step-text{     /*действия в шаге*/
+        color: #EDAD0A;
+        font-size: 25px;
+        padding-left: 50px;
+        list-style-type: none;
+    }
+    .footer{        /*подвал сайта*/
+        background: #d48610;
+        height: auto;
+        flex: 0 0 auto;
+        padding: 50px;
+        margin-top: 100px;
+    }
+    .footer_left{       /*левая часть*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .footer_logo{       /*логотип-ссылка*/
+        font-family: 'Pacifico', cursive;
+        color: #327413;
+        text-decoration: none;
+        font-size: 40px;
+    }
+    .footer_text{       /*текст*/
+        color: #327413;
+        font-size: 24px;
+    }
+    .footer_right{      /*правая часть*/
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contact{       /*связь*/
+        color: #327413;
+        font-size: 24px;
+        margin-top: -100px;
+        margin-right: 50px;
+    }
+    .email{     /*почта*/
+        color: #327413;
+        font-size: 16px;
+        margin-right: 50px;
+    }
+    .number{        /*номер*/
+        color: #327413;
+        font-size: 16px;
+        margin-right: 50px;
+    }
+    .about{
+        color: #327413;
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 50px;
+    }
+        </style>
+</body>
+</html>

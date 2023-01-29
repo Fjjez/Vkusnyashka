@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--шрифт для логтипа-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!--основной шрифт-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Vkusnyshka-dessert</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="Vkusnyashka.html">Вкусняшка</a>
+    </header>
+    <div class="container">
+        <div class="block">     <!--Блок 1-->
+            <img  class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/sh/----/----.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block1-dess-recipe.html">Шоколадный торт-мусс с ягодами</a>
+        </div>
+        <div class="block">     <!--Блок 2-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/p/---7/---.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block2-dess-recipe.html">Пончики с черничным кремом</a>
+        </div>
+        <div class="block">     <!--Блок 3-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/t/-----27/-----.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block3-dess-recipe.html">Тертый пирог со смородиной и вишней</a>
+        </div>
+        <div class="block">     <!--Блок 4-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/p/--142/--14.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block4-dess-recipe.html">Печенье-сердечки к 14 Февраля</a>
+        </div>
+        <div class="block">     <!--Блок 5-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/n/---13/--.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block5-dess-recipe.html">Немецкая блинная запеканка с бананами</a>
+        </div>
+        <div class="block">     <!--Блок 6-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/b/1/--.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block6-dess-recipe.html">Брауни с шоколадом</a>
+        </div>
+        <div class="block">     <!--Блок 7-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/ya/---6/-.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block7-dess-recipe.html">Яблочное суфле на меду</a>
+        </div>
+        <div class="block">     <!--Блок 8-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/zh/---2/---.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block8-dess-recipe.html">Желе «Малина в шампанском»</a>
+        </div>
+        <div class="block">     <!--Блок 9-->
+            <img class="block-img" src="https://lenta.servicecdn.ru/globalassets/recepty/ya/-12/_44--1-100.jpg?preset=medium" alt="">
+            <a class="block-title" href="Block9-dess-recipe.html">Яблочная пастила</a>
+        </div>
+    </div>
+    <footer class="footer">     <!--подвал сайта-->
+        <div class="footer_left">      <!--левая часть-->
+            <a class="footer_logo" href="Vkusnyashka.html">Вкусняшка</a>
+            <p class="footer_text">Готовьте с удовольствием!</p>
+            <a class="about" href="About.html">Примечание для сайта</a>
+        </div>
+            <div class="footer_right">       <!--правая часть-->
+            <p class="contact">Связь с нами:</p>
+            <p class="email">***********@gmail.com</p>
+            <p class="number">+7(000)000-00-00</p>
+        </div>
+    </footer>
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+    }
+body{   /*цвет фона*/
+    background: #30251c;
+    font-family: 'Nunito', sans-serif;
+}
+.logo{  /*логотип*/
+    font-family: 'Pacifico', cursive;
+    color: #327413;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 50px;
+}
+.header{    /*шапка*/
+    background: #D48610;
+    height: 140px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container{     /*контент*/
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+}
+.block{     /*блоки*/
+    box-sizing: border-box;
+    width: 404px;
+    height: 640px;
+    border: 3px solid #EDAD0A;
+    border-radius: 20px;
+}
+.block-img{     /*изображения блоков*/
+    width: 398px;
+    height: 480px;
+    border-radius: 15px 15px 0px 0px;
+}
+.block-title{       /*ссылки блоков*/
+    color: #327413;
+    font-size: 28px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+.footer{        /*подвал сайта*/
+    background: #d48610;
+    height: auto;
+    flex: 0 0 auto;
+    padding: 50px;
+}
+.footer_left{       /*левая часть*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.footer_logo{       /*логотип-ссылка*/
+    font-family: 'Pacifico', cursive;
+    color: #327413;
+    text-decoration: none;
+    font-size: 40px;
+}
+.footer_text{       /*текст*/
+    color: #327413;
+    font-size: 24px;
+}
+.footer_right{      /*правая часть*/
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 40px;
+}
+.contact{       /*связь*/
+    color: #327413;
+    font-size: 24px;
+    margin-top: -100px;
+    margin-right: 50px;
+}
+.email{     /*почта*/
+    color: #327413;
+    font-size: 16px;
+    margin-right: 50px;
+}
+.number{        /*номер*/
+    color: #327413;
+    font-size: 16px;
+    margin-right: 50px;
+}
+.about{
+    color: #327413;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+}
+    </style>
+</body>
+</html>
